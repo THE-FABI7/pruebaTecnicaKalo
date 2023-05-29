@@ -1,0 +1,26 @@
+.main-content {
+  text-align: center;
+  padding: 40px;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.main-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.gif-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.gif {
+  width: 100%;
+  height: auto;
+}

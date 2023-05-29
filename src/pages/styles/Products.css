@@ -1,0 +1,246 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-details-button {
+  background-color: #ff0066;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-details-button:hover {
+  background-color: #cc0052;
+}
+
+/*  */
+.product-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.search-bar input,
+.search-bar select {
+  margin-right: 10px;
+  padding: 8px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.search-bar select {
+  max-width: 300px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px 16px;
+  padding-right: 30px;
+}
+
+.search-bar input:focus,
+.search-bar select:focus {
+  outline: none;
+  background-color: #e6e6e6;
+}
+
+.product-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+/* estilos para el modal */
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.modal-close-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-icon {
+  color: #999;
+}
+
+.close-icon:hover {
+  color: #666;
+}
+
+.modal-body {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+}
+
+.modal-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.modal-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-enlarged-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.modal-details {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.modal-description {
+  margin-bottom: 10px;
+}
+
+.modal-card {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.modal-card div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-card h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modal-card p {
+  margin: 0;
+}
+
+.modal-close-button {
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.modal-close-button:hover {
+  background-color: #ccc;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(161, 154, 154);
+  }
+
+  .search-bar input,
+  .search-bar select {
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .modal-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-image-container {
+    margin-bottom: 20px;
+  }
+
+  .modal-card {
+    margin-bottom: 0;
+  }
+}

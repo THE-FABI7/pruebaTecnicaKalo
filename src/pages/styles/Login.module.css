@@ -1,0 +1,73 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .box {
+    background: #2d2d3b;
+    width: 400px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login {
+    font-size: 28px;
+    color: #1daf49;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .eula {
+    color: #f5f0f0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    color: #fcfcfc;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .inputField {
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #f1eded;
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .submitButton {
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #0051a3;
+  }
+  
+  .submitButton:focus {
+    outline: none;
+  }
+  
