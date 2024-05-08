@@ -1,17 +1,27 @@
 .nav {
+  position: fixed; /* Fija la barra de navegación en la parte superior de la página */
+  top: 0; /* Asegura que la barra de navegación esté en la parte superior de la página */
+  left: 0; /* Asegura que la barra de navegación esté alineada a la izquierda de la página */
+  width: 100%; /* Asegura que la barra de navegación se extienda a lo largo de todo el ancho de la página */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cc0052;
+  background-color: #000;
   padding: 20px;
+  z-index: 1000; /* Asegura que la barra de navegación se muestre por encima de otros elementos de la página */
 }
 
-.leftLinks {
-  float: left;
+.leftLinks, .rightLinks {
+  display: flex; /* Cambia de float a flex para un mejor control del diseño */
 }
 
 .rightLinks {
   float: right;
+}
+
+.nav.hide {
+  top: -100px; /* Ajusta según la altura de tu barra de navegación */
+  transition: top 0.3s;
 }
 
 .nav a {

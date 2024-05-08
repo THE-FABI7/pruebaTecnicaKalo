@@ -5,7 +5,7 @@
 }
 
 .product-card {
-  background-color: #fff;
+  background-color: #dfd9d9;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@
 }
 
 .product-details-button {
-  background-color: #ff0066;
+  background-color: #2968C8;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -61,6 +61,7 @@
   background-color: #ffffff;
   border-radius: 5px;
   width: 100%;
+  border: 1px solid #333;
   border-radius: 5px;
 }
 
@@ -131,7 +132,7 @@
 .modal-body {
   display: flex;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(238, 185, 185);
 }
 
 .modal-image-container {
