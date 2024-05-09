@@ -1,3 +1,7 @@
+![image](https://github.com/THE-FABI7/pruebaTecnicaKalo/assets/80603614/1d14cc29-78ce-4fd3-a50b-67c59eb2c98f)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
